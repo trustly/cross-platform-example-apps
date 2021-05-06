@@ -18,7 +18,7 @@ namespace TrustlyXamarinExample
 
         void onCheckoutButtonClicked(System.Object sender, System.EventArgs e)
         {
-            String trustlyCheckoutURLString = "https://test.trustly.com/demo/deposit?env=live&UseIntegrationSelector=1&apiuser=apitest_child";"
+            String trustlyCheckoutURLString = "https://test.trustly.com/demo/deposit?env=live&UseIntegrationSelector=1&apiuser=apitest_child";
             CheckoutPage checkoutPage = new CheckoutPage(trustlyCheckoutURLString);
             Navigation.PushModalAsync(checkoutPage);
         }
